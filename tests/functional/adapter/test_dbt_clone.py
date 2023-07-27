@@ -2,7 +2,7 @@ import pytest
 from dbt.tests.adapter.dbt_clone.test_dbt_clone import BaseClonePossible
 
 
-class TestBigQueryClonePossible(BaseClonePossible):
+class TestDatabricksClonePossible(BaseClonePossible):
     @pytest.fixture(autouse=True)
     def clean_up(self, project):
         yield
